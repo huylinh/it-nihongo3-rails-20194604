@@ -53,6 +53,13 @@
   </div>
 <% end %>
 
+<p>Review List</p>
+  <ul>
+    <% @book.book_reviews.each do |book_review|%>
+      <li><%= book_review.review %>
+      (<i><%= book_review.user_id %></i>)</li>
+    <% end %>
+  </ul>
 
 
 
